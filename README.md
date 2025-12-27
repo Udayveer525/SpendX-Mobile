@@ -1,50 +1,27 @@
-# Welcome to your Expo app 👋
+# 📱 SpendX Mobile - Personal Finance Tracker
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+**SpendX Mobile** is a cross-platform mobile application designed to help users track expenses and visualize financial health on the go. Built with **React Native** and **Expo**, it delivers a native performance experience with a modern, file-based routing architecture.
 
-## Get started
+🔌 **Backend:** Powered by the [SpendX API](https://github.com/Udayveer525/SpendX-Backend)
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## 🛠️ Tech Stack
 
-2. Start the app
+| Component | Technology |
+| :--- | :--- |
+| **Framework** | ![React Native](https://img.shields.io/badge/React_Native-20232A?style=flat&logo=react&logoColor=61DAFB) via **Expo SDK** |
+| **Routing** | **Expo Router** (File-based navigation) |
+| **State/Logic** | Custom React Hooks (`useTransactions`) |
+| **Networking** | Fetch API connecting to Express Backend |
+| **Design** | Flexbox & `StyleSheet` API |
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## ✨ Key Features
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+* **📱 Cross-Platform:** Single codebase running smoothly on both iOS and Android.
+* **🛣️ Modern Navigation:** Utilizes **Expo Router** for intuitive, file-system based routing (similar to Next.js).
+* **🧩 Modular Architecture:** Reusable UI components (`BalanceCard`, `TransactionItem`) and isolated logical hooks.
+* **🔒 Secure Auth Flow:** dedicated authentication screens (`sign-in`, `sign-up`) handling user sessions.
+* **📱 Safe Area Management:** Implemented custom `SafeScreen` wrappers to handle modern device notches and bezels gracefully.
